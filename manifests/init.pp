@@ -5,7 +5,6 @@ class orchestrator (
   Stdlib::Absolutepath $config            = $orchestrator::params::config,
   Hash $config_defaults                   = $orchestrator::params::config_defaults,
   Hash $config_override                   = {},
-  String $config_template                 = $orchestrator::params::config_template,
   Stdlib::Ensure::Package $package_ensure = $orchestrator::params::package_ensure,
   Boolean $package_manage                 = $orchestrator::params::package_manage,
   Array[String] $package_name             = $orchestrator::params::package_name,

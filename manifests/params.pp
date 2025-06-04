@@ -2,7 +2,6 @@
 class orchestrator::params {
 
   $config            = '/etc/orchestrator.conf.json'
-  $config_template   = 'orchestrator/orchestrator.conf.json.erb'
   $package_ensure    = 'present'
   $package_manage    = true
   $package_name      = [ 'orchestrator' ]

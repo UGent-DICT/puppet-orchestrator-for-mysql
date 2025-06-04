@@ -10,7 +10,7 @@ class orchestrator::config inherits orchestrator {
     owner   => 0,
     group   => 0,
     mode    => '0644',
-    content => template($orchestrator::config_template),
+    content => to_json_pretty($options),
   }
 
 }
